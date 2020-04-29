@@ -10,4 +10,20 @@
     padding: 10px 20px;
     border-radius: 10px;
     box-shadow: 0 1px 4px rgba(0,0,0,.2);
+
+    margin-bottom: 50px;
+}
+
+img{
+    width: 90%;
+    height: auto;
+  }
+
+.photoCard p {
+    padding: 20px 0;
+    font-weight: 400;
+}
+
+.photoCard h2,h4{
+    font-weight: 700;
 }
