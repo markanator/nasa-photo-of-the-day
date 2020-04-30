@@ -4,7 +4,7 @@ import './header.css'
 export default function Header(){
     return (
         <div className="Header">
-            <h1>Astronomy photo of the day!</h1>
+            <h1>Astronomy Photo of The Day!</h1>
         </div>
     );
 }

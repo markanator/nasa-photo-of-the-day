@@ -2,6 +2,13 @@ import React from 'react';
 import "./photoCard.css";
 
  function PhotoCard(props){
+     if(!props){
+         return (
+             <div>
+                 <h3>Loading...</h3>
+             </div>
+         );
+     }
     return (
         <div className="photoCard">
             <h2>{props.title}</h2>
