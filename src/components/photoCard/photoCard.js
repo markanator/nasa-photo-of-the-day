@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import moment from "moment";
 
 const PhotoCardy = styled.div`
     flex-direction: column;
@@ -40,8 +41,9 @@ const PhotoCardy = styled.div`
     return (
         <PhotoCardy>
             <h2>{props.title}</h2>
-            <h4>{props.date}</h4>
+            <h4>{moment(props.date).format('MM-DD-YYYY')}</h4>
             <img alt="nasa" src={props.imgSrc} />
+            
             <p>{props.blurb}</p>
         </PhotoCardy>
     );

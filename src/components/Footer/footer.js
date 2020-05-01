@@ -17,7 +17,7 @@ const ShoeBox = styled.div`
     color: #a2a2a2;
 `;
 const WaveFooter = styled.svg`
-    margin-top: -60px;
+    margin-top: -55px;
     vertical-align: bottom;
     margin-bottom: -1px;
     width: 100%;

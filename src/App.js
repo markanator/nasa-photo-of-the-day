@@ -6,6 +6,8 @@ import Header from "./components/header/header";
 import Body from "./components/Body/body";
 import Footer from './components/Footer/footer';
 
+
+
 const AppDiv = styled.div`
   text-align: center;
   width: 100vw;
