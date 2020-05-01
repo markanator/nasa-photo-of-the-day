@@ -61,7 +61,8 @@ export default function Body() {
                 title={nasaData.title}
                 date={nasaData.date}
                 blurb={nasaData.explanation}
-                imgSrc={nasaData.url}/>
+                media_type={nasaData.media_type}
+                url={nasaData.url}/>
         </ReactBody>
     );
 }

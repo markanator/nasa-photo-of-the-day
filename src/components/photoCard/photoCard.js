@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import moment from "moment";
 
-const PhotoCardy = styled.div`
+const PhotoCardy = styled.div `
     flex-direction: column;
     justify-content: center;
     align-self: center;
@@ -30,23 +30,20 @@ const PhotoCardy = styled.div`
     
 `;
 
- function PhotoCard(props){
-     if(!props){
-         return (
-             <div>
-                 <h3>Loading...</h3>
-             </div>
-         );
-     }
+function PhotoCard(props) {
+
     return (
         <PhotoCardy>
             <h2>{props.title}</h2>
             <h4>{moment(props.date).format('MM-DD-YYYY')}</h4>
-            <img alt="nasa" src={props.imgSrc} />
-            
+            {props.media_type === "video"
+                ? <iframe title="video" src={props.url} width='480px' height='320px'></iframe>
+                : <img alt="nasa" src={props.url}/>}
+
             <p>{props.blurb}</p>
         </PhotoCardy>
     );
+
 }
 
 export default PhotoCard;
