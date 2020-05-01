@@ -1,19 +1,26 @@
 import React from "react";
-import "./App.css";
+
+import styled from 'styled-components';
 
 import Header from "./components/header/header";
 import Body from "./components/Body/body";
 import Footer from './components/Footer/footer';
 
+const AppDiv = styled.div`
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+`;
+
 function App() {
 
   
   return (
-    <div className="App">
+    <AppDiv>
       <Header />
       <Body />
       <Footer />
-    </div>
+    </AppDiv>
   );
 }
 

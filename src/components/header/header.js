@@ -1,10 +1,20 @@
 import React from "react";
-import './header.css'
+
+import styled from 'styled-components';
+
+const SiteTitle = styled.h1`
+    color: #2b283a;
+    text-shadow: 4px 4px white;
+    font-weight: 700;
+`;
 
 export default function Header(){
+
+
+    
     return (
         <div className="Header">
-            <h1>Astronomy Photo of The Day!</h1>
+            <SiteTitle>Astronomy Photo of The Day!</SiteTitle>
         </div>
     );
 }
